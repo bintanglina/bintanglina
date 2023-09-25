@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>my website</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* CSS untuk mengatur tautan secara vertikal */
+        #badan_kiri nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #badan_kiri nav a {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        /* CSS untuk mengatur gambar dan teks secara horizontal */
+        #badan_kanan {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+
+        #badan_kanan img {
+            width: 30%;
+            height: 50%;
+            margin-right: 200px;
+        }
+
+        #badan_kanan .text-container {
+            flex: 1;
+        }
+
+        #badan_kanan ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #badan_kanan ul li {
+            margin: 5px 0;
+        }
+
+        /* CSS untuk mengubah warna teks tautan "Login" dan "Signup" */
+        #badan_kiri .text-container nav a {
+            color: #a15e48; /* Ganti dengan kode warna yang Anda inginkan */
+            text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+        }
+
+        /* Aturan CSS untuk tautan "Home" dengan spesifisitas lebih tinggi */
+        #badan_kiri nav a[href="Menu.html"] {
+            color: #FF0000; /* Ganti dengan kode warna yang Anda inginkan */
+            text-decoration: none;
+        }
+
+        #badan_kiri nav a[href="about.html"] {
+            color: #FF0000;
+            text-decoration: none;
+        }
+
+        #badan_kiri nav a[href="Report.html"] {
+            color: #FF0000;
+            text-decoration: none;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <div id="CONTAINER-NAVBAR"></div>
+
+    <div id="kepala">
+        <h1>AYAM GEPREK ANAK RANTAU</h1>
+    </div>
+   
+    <div id="badan">
+        <div id="badan_kiri">
+            <nav>
+                <a href="Menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="Report.html">Report</a>
+            </nav>
+
+            <div class="badan_kanan_text">
+                
+                <button type="button">Login</button>
+                <button type="button">Signup</button>
+            </div>
+        </div>
+
+        <div id="badan_kanan">
+            <img src="DSC06264.jpg" width="30%" height="50%" alt="Image Description">
+            <div class="text-container">
+                <p>DI AYAM GEPREK ANAK RANTAU TERSEDIA BEBERAPA MENU BISA DI KLIK TOMBOL MEMNU YANG ADA DI SEBELAH KANAN</p>
+                <ul>
+                    <li>MEMILIKI CITA RASA YANG BEDA</li>
+                    <li>MEMAKAI AYAM YANG BERKUALITAS</li>
+                    <li>HARGA SANGAT TERJANGKAU</li>
+                   
+                </ul>
+              
+                <!-- Form di sini -->
+                <form>
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama"><br>
+
+                    <label for="pilihan">Pilihan:</label>
+                    <select id="pilihan" name="pilihan">
+                        <option value="AYAM GEPREK">Ayam Geprek</option>
+                        <option value="ES CAPUCINO">Es Capucino</option>
+                    
+                    </select><br>
+
+                    <label for="pesan">Pesan:</label><br>
+                    <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea><br>
+
+                    <button type="submit">Kirim</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="kaki">
+        <p> Copyright &copy; 2017 Bintang lina<br>
+            <a href="mailto:sayang@bintanglina.com">sayang@bintanglina.com</a></p>
+    </div>
+</body>
+</html>

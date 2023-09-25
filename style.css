@@ -1,0 +1,62 @@
+#NAVIGATION-BAR {
+    margin: auto;
+    width: 1000px;
+    background-color: #0000;
+}
+
+#kepala {
+    width: 100%;
+    background: #054103;
+    display: inline-block;
+    text-align: center;
+}
+
+#badan {
+    width: 100%;
+    background: #eff1f4;
+    display: flex;
+    text-align: center;
+}
+
+#badan_kiri {
+    width: 25%;
+    background: #001204;
+    
+}
+
+#badan_kanan {
+    width: 75%;
+    background: #697274;      
+}
+
+#badan_kanan {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#badan_kanan image {
+    width: 30%;
+    height: 50%;
+    margin-right: 20px;
+
+}
+
+#badan_kanan_text{
+    text-align: left;
+    margin-top: 200px;
+    margin-left:200px;
+   
+}
+
+#badan_kiri nav a[href="home.html"]{
+    font-style: italic;
+}
+
+
+#kaki {
+    width: 100%;
+    background: #c98c31;
+    display: inline-block;
+    text-align: center;
+}
